@@ -1,0 +1,10 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://user:password@localhost:5432/test_database" // Coloque sua URL de conexão aqui
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Modelos...

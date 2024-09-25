@@ -1,0 +1,65 @@
+{
+  "name": "buddybreed-match",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "node build/server.js",
+    "dev": "ts-node-dev src/server.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Ray da Silva & Israel Lázaro",
+  "license": "ISC",
+  "description": "Uma Aplicação para cruzamento de Pets",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@prisma/client": "^5.20.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.13",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/knex": "^0.16.1",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.5.4",
+    "@types/pg": "^8.11.10",
+    "@types/sqlite3": "^3.1.11",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^10.0.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.0.1",
+    "pg": "^8.13.0",
+    "prisma": "^5.20.0",
+    "supertest": "^7.0.0",
+    "testcontainers": "^9.12.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.1",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "uuid": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaySilvaP/BuddyBreed-Match.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RaySilvaP/BuddyBreed-Match/issues"
+  },
+  "homepage": "https://github.com/RaySilvaP/BuddyBreed-Match#readme"
+}
