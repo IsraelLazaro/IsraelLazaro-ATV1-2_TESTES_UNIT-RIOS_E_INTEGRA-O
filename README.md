@@ -15,7 +15,7 @@ cd IsraelLazaro-ATV1-2_TESTES_UNIT-RIOS_E_INTE
 ```shell
 npm install
 ```
-### 4. EXECUTAR O COMANDO PARA EXECUTAR O *TESTE UNITÁRIOS* - ATIVIDADE 01
+### 4. EXECUTAR O COMANDO PARA EXECUTAR OS *TESTES UNITÁRIOS* - ATIVIDADE 01
 *10 TESTES*
 ```shell
 npm test user.test.ts
@@ -24,7 +24,7 @@ npm test user.test.ts
 ```shell
 npm test userMidlleware.test.ts
 ```
-### 5. EXECUTAR O COMANDO PARA EXECUTAR O *TESTE DE INTEGRAÇÃO* - ATIVIDADE 02
+### 5. EXECUTAR O COMANDO PARA EXECUTAR OS *TESTES DE INTEGRAÇÃO* - ATIVIDADE 02
 *05 TESTES*
 ```shell
 npm test userIntegracao.test.ts
