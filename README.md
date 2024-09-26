@@ -9,7 +9,7 @@ git clone https://github.com/IsraelLazaro/IsraelLazaro-ATV1-2_TESTES_UNIT-RIOS_E
 ```
 2. ACESSAR O REPOSITÓRIO CLONADO
 ```shell
-cd IsraelLazaro-ATV1-2_TESTES_UNIT-RIOS_E_INTE
+cd .\IsraelLazaro-ATV1-2_TESTES_UNIT-RIOS_E_INTEGRA-O\
 ```
 3. EXECUTAR O COMANDO PARA BAIXAR AS DEPENDÊNCIAS 
 ```shell
