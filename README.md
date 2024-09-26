@@ -25,7 +25,7 @@ npm test user.test.ts
 npm test userMidlleware.test.ts
 ```
 ### 5. EXECUTAR O COMANDO PARA EXECUTAR O *TESTE DE INTEGRAÇÃO* - ATIVIDADE 02
-*10 TESTES*
+*05 TESTES*
 ```shell
 npm test userIntegracao.test.ts
 ```
