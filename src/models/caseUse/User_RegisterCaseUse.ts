@@ -3,8 +3,7 @@ import { UserType } from "../entities/user";
 import bcrypt from 'bcrypt';
 
 export class RegisterUserCaseUse {
-    async execute(userData:UserType) { 
-              
+    async execute(userData:UserType) {               
         try {
             const user = new User({
                 userName: userData.userName,
@@ -15,7 +14,7 @@ export class RegisterUserCaseUse {
             await user.save();
             return user;
         } catch (error:any) {
-            console.error("Erro ao cadastrar usuário:", error);
+            //console.error("Erro ao cadastrar usuário:", error);
             throw new Error("Falha ao registrar usuário. Por favor, tente novamente mais tarde.");
         };          
     };
