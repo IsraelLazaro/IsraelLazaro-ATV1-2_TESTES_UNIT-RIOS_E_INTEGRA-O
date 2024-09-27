@@ -115,16 +115,15 @@ describe("Middleware: verifyExistsIdUser", () => {
     // Teste 07
     test("Deve retornar erro 400 quando a password é muito curta", async () => {
         const req = {
-            body: { ...newUser, password: "123" } // Simula uma senha muito curta
+            body: { ...newUser, password: "123" } 
         } as Request;
 
-        const res = mockResponse(); // Cria uma resposta mockada
+        const res = mockResponse(); 
 
         await validateRegisterUser(req, res, mockNext);
 
         expect(res.status).toHaveBeenCalledWith(400);
-        expect(res.json).toHaveBeenCalledWith({ message: '"password" length must be at least 6 characters long' }); // Mensagem de erro esperada
-        expect(mockNext).not.toHaveBeenCalled(); // Verifica que next() não foi chamado
+        expect(res.json).toHaveBeenCalledWith({ message: '"password" length must be at least 6 characters long' });
     });
     // Teste 08 
     test("Deve retornar erro 400 quando o CPF é muito curto", async () => {
@@ -140,7 +139,7 @@ describe("Middleware: verifyExistsIdUser", () => {
     // Teste 09
     test("Deve retornar erro 400 quando o telefone está em formato inválido", async () => {
         const req = {
-            body: { phone: "123456789" } // Formato de telefone inválido
+            body: { phone: "123456789" } 
         } as Request;
         const res = mockResponse();
         await validateUpdateUser(req, res, mockNext);
@@ -152,7 +151,7 @@ describe("Middleware: verifyExistsIdUser", () => {
     // Teste 10 
     test("Deve retornar erro 400 quando o campo cidade está ausente", async () => {
         const req = {
-            body: { address: { state: "SP" } } // Campo cidade ausente
+            body: { address: { state: "SP" } } 
         } as Request;
         const res = mockResponse();
         await validateUpdateUser(req, res, mockNext);

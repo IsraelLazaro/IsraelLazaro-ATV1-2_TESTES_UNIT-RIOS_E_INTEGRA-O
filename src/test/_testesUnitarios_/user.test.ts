@@ -115,7 +115,7 @@ describe("Testes com usuários - TESTES UNITÁRIOS", () => {
 
     // Teste 09  
     test("Deve lançar erro ao tentar buscar um usuário com nome de usuário inválido", async () => {
-        const invalidUserName = "usuarioInvalido"; // Nome de usuário que não existe
+        const invalidUserName = "usuarioInvalido"; 
         (findUserCaseUse.execute as jest.Mock).mockRejectedValue(new Error("Usuário não encontrado"));
         
         await expect(findUserCaseUse.execute(invalidUserName)).rejects.toThrow("Usuário não encontrado");
